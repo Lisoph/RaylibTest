@@ -1,0 +1,4 @@
+*.vcx*
+x64/
+Debug/
+*.png
