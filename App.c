@@ -78,7 +78,7 @@ static void LoadModels(App *app) {
     app->models[APP_MODEL_MAP] = LoadModel("castle\\castle_map_complete.obj");
     app->models[APP_MODEL_MAP].material = app->materials[APP_MODEL_MAP] = LoadMaterial("castle\\castle_map_complete.mtl");
     app->models[APP_MODEL_STORMTROOPER] = LoadModel("stormtrooper\\SW-RS_PC_ENEMY_Storm_Trooper.obj");
-    app->models[APP_MODEL_STORMTROOPER].material = app->materials[APP_MODEL_MAP] = LoadMaterial("stormtrooper\\SW-RS_PC_ENEMY_Storm_Trooper.mtl");
+    app->models[APP_MODEL_STORMTROOPER].material = app->materials[APP_MODEL_STORMTROOPER] = LoadMaterial("stormtrooper\\SW-RS_PC_ENEMY_Storm_Trooper.mtl");
     app->models[APP_MODEL_STORMTROOPER].transform = MatrixMultiply(MatrixRotateY(DEG2RAD * 180.0f), MatrixScale(2.0f, 2.0f, 2.0f));
     app->models[APP_MODEL_DAISYHAT] = LoadModel("Daisy Hat\\hat_daisy_model.obj");
     app->models[APP_MODEL_DAISYHAT].material = app->materials[APP_MODEL_DAISYHAT] = LoadMaterial("Daisy Hat\\hat_daisy_model.mtl");
